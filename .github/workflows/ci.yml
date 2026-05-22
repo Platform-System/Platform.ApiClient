@@ -20,4 +20,5 @@ jobs:
     uses: Platform-System/Platform.CI-CD/.github/workflows/build-lib.yml@main
     with:
       node_version: '20'
+      lint_command: 'echo "No lint script in Platform.ApiClient"'
       build_command: 'npm run test && npm run build'
