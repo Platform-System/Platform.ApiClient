@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - '**.md'
+      - '.gitignore'
+  pull_request:
+    branches: [ main ]
+    paths-ignore:
+      - '**.md'
+      - '.gitignore'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    uses: Platform-System/Platform.CI-CD/.github/workflows/build-lib.yml@main
+    with:
+      node_version: '20'
+      build_command: 'npm run test && npm run build'

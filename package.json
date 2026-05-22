@@ -15,7 +15,8 @@
   "scripts": {
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "build": "tsc -p tsconfig.build.json",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "test": "vitest run"
   },
   "exports": {
     ".": {
@@ -29,6 +30,8 @@
   },
   "devDependencies": {
     "@types/node": "^24.12.3",
-    "typescript": "~6.0.2"
+    "axios-mock-adapter": "^2.1.0",
+    "typescript": "~6.0.2",
+    "vitest": "^4.1.7"
   }
 }
