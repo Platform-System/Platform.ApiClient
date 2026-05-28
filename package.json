@@ -1,7 +1,10 @@
 {
   "name": "@platform-system/api-client",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "type": "module",
   "description": "Shared API client, Keycloak authentication config, and API type definitions for all Platform UI projects",
   "main": "./src/index.ts",
