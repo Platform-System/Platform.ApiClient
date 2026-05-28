@@ -24,7 +24,7 @@
       "default": "./src/index.ts"
     }
   },
-  "dependencies": {
+  "peerDependencies": {
     "axios": "^1.16.1",
     "keycloak-js": "^26.2.4"
   },
