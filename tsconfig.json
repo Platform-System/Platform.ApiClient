@@ -12,7 +12,6 @@
     "noEmit": true,
     "types": ["node"],
     "baseUrl": ".",
-    "ignoreDeprecations": "6.0",
     "paths": {
       "@platform/api-client": ["./src/index.ts"],
       "@platform/api-client/*": ["./src/*"]
